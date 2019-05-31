@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="Pokemon">
 <head>
+	<script src="lib/jquery.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
 	<meta charset="utf-8">
 	<title>Pokemon</title>
+	<link rel="stylesheet"  href="lib/boo/css/booststrap.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body ng-controller="Pokedex">
-	<!--Script AngularJs-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-    <!-- Local Script -->
+	<div class="cuadro" ng-repeat="poke in PokedexB">
+			<p>{{poke.data.name}}</p>
+	 </div>
+    
+    <script src="lib/boo/js/booststrap.js"></script>
+    <script src="lib/angularjs"></script>
 	<script src="js/script.js"></script>
 
 </body>
